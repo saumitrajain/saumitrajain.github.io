@@ -123,12 +123,12 @@
         
         var root = byId( rootId );
         
-        if (!impressSupported) {
-            root.className = "impress-not-supported";
-            return;
-        } else {
-            root.className = "";
-        }
+        // if (!impressSupported) {
+            // root.className = "impress-not-supported";
+            // return;
+        // } else {
+            // root.className = "";
+        // }
         
         // viewport updates for iPad
         var meta = $("meta[name='viewport']") || document.createElement("meta");
