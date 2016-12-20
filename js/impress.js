@@ -399,9 +399,9 @@
             target = target.parentNode;
         }
         
-        if ( impress().goto(target) ) {
-            event.preventDefault();
-        }
+        // if ( impress().goto(target) ) {
+            // event.preventDefault();
+        // }
     }, false);
     
     // touch handler to detect taps on the left and right side of the screen
