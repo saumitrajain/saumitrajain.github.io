@@ -15,7 +15,7 @@ html * {
 }
 
 body {
-  font-size: 100%;
+  /* font-size: 100%; */
   font-family: "Droid Serif", serif;
   color: #7f8c97;
   background-color: #e9f0f5;
@@ -77,7 +77,7 @@ header h1 {
   }
   header h1 {
     font-size: 24px;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
   }
 }
 
@@ -296,7 +296,7 @@ header h1 {
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
     font-size: 20px;
-    font-size: 1.25rem;
+    /* font-size: 1.25rem; */
   }
   .cd-timeline-content p {
     font-size: 16px;
@@ -328,7 +328,7 @@ header h1 {
     left: 122%;
     top: 6px;
     font-size: 16px;
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right;
