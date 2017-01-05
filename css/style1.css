@@ -362,7 +362,7 @@ FLoating labels
   position: absolute;
   top: 16px;
   left: 16px;
-  font-size: 1.0rem;
+  font-size: 1.5rem;
   cursor: text;
   -webkit-transition: top 0.2s, left 0.2s, font-size 0.2s;
   -moz-transition: top 0.2s, left 0.2s, font-size 0.2s;
@@ -373,7 +373,7 @@ FLoating labels
 }
 .js .floating-labels .cd-label.float {
   /* move label out the input field */
-  font-size: 1.0rem;
+  font-size: 1.5rem;
   top: -16px;
   left: 0 !important;
 }
