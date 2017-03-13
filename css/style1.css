@@ -47,7 +47,7 @@ Form
   display: block;
 }
 .cd-form input, .cd-form textarea, .cd-form select, .cd-form label {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
   font-size: 1.6rem;
   color: #2b3e51;
 }
@@ -370,6 +370,7 @@ FLoating labels
 }
 .js .floating-labels .icon .cd-label {
   left: 56px;
+  color:#00a8ff;
 }
 .js .floating-labels .cd-label.float {
   /* move label out the input field */

@@ -128,8 +128,8 @@ html {
 body {
   background-color: #ecf0f1;
   min-width: 300px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+ /*  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; */
 }
 
 h1, h2, h3, h4, h5 {
@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5 {
 li, span, p, a, h1, h2, h3, h4, h5 {
   line-height: 1;
 }
-
+	
 p {
   display: block;
 }

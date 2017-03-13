@@ -13,7 +13,6 @@ $(function(){
         //var iframe = '<object data="'+pdf_link+'" type="application/pdf"><embed src="'+pdf_link+'" type="application/pdf" /></object>'        
         var iframe = '<object type="application/pdf" data="'+pdf_link+'" width="100%" height="500">No Support</object>'
         $.createModal({
-            title:'My Title',
             message: iframe,
             closeButton:true,
             scrollable:false
@@ -21,3 +20,5 @@ $(function(){
         return false;        
     });    
 })
+
+

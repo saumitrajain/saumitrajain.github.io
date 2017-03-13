@@ -21,7 +21,7 @@
 	
 	
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Open+Sans:300" />
-    <!-- <link rel="stylesheet" type="text/css" href="/css/styles.css"/> -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 	<script src="js/modernizr.js"></script>
 	<script type="text/javascript">  
 		
@@ -36,14 +36,23 @@ function showIFrame() {
 </head>
 
 <body>
+<div class="fullscreen-bg">
+    <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+        <source src="v2.mp4" type="video/mp4">
+        
+    </video>
+</div>
 	
 
 	<div class="preloader">
 		<img src="img/loader.gif" alt="Preloader image">
 	</div>
 	<div>
+	
+
 	<nav class="navbar">
 		<div class="container">
+		
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -104,14 +113,14 @@ function showIFrame() {
 		  <!-- Modal content -->
 		  <div class="modal-content">
 			<div class="modal-header">
-			  <span class="close">&times;</span>
+			  <!-- <span class="close">&times;</span> -->
 			  <h2>Resume</h2>
 			</div>
 			<div class="modal-body">
 			 <div class="panel panel-primary" id="panel1"style="display:none">
 					  <div class="panel-heading"></div>
 					  <div class="panel-body">
-					  <iframe id="iframepdf" width="1100" height="800" position:absolute></iframe>
+					  <iframe id="iframepdf" height="800" position:absolute></iframe>
 					  <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
@@ -132,7 +141,7 @@ function showIFrame() {
 		<div class="container">
 			<div class="row bottom-footer text-center-mobile">
 				<div class="col-sm-8">
-					<p>&copy; 2015 All Rights Reserved. </p>
+					<p>&copy; 2017 All Rights Reserved. </p>
 				</div>
 				<div class="col-sm-4 text-right text-center-mobile">
 					<ul class="social-footer">
@@ -163,7 +172,7 @@ function showIFrame() {
 	<script src="js/main.js"></script>
 	<script src="js/modernizr.custom.72111.js"></script>
 	<!-- <script src="js/impress.js"></script> -->
-	<!-- <script src="js/script.js"></script> -->
+	 <script src="js/script.js"></script> 
 </body>
 
 </html>

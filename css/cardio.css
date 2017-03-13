@@ -52,7 +52,7 @@ body {
 p {
 	font-size: 18px;
 	line-height: 1.5;
-	color: #8a8e91;
+	/* color: white; */
 }
 
 h1,
@@ -117,7 +117,7 @@ header {
 	width: 100%;
 	color: white;
 	background: rgba(28, 36, 65, 0.93);
-	background: url('../img/header.jpg');
+	/* background: url('../img/header.jpg'); */
 	background-size: cover;
 }
 
@@ -194,7 +194,7 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 }
 /* Buttons */
 
-.btn {
+/* .btn {
 	font-size: 18px;
 	display: inline-block;
 	padding: 15px 30px;
@@ -204,7 +204,7 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 	background: transparent;
 	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
-}
+} */
 
 /* .btn:hover,
 .btn:focus {
@@ -225,7 +225,7 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 	background: transparent;
 }
 
-/* .btn.btn-blue-fill:hover {
+/* .btn.btn-blue-fill:	 {
 	color: white;
 	background: #00a8ff;
 } */
@@ -652,13 +652,15 @@ section {
 .owl-twitter i.icon {
 	font-size: 36px;
 	margin-bottom: 60px;
-	color: white;
+	
 }
 /* Footer */
 
 footer {
 	padding: 0 0 10px;
-	background: url('../img/footer.jpg');
+	opacity:0.2;
+	
+	/* background: url('../img/footer.jpg'); */
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -721,9 +723,9 @@ footer .social-footer li a {
 	color: #fff;
 }
 
-footer .social-footer li:hover a {
+/* footer .social-footer li:hover a {
 	color: #00a8ff;
-}
+} */
 /* Form Control */
 
 .form-control {
@@ -774,11 +776,18 @@ footer .social-footer li:hover a {
 /* Popup */
 .modal {
 	padding: 0 25px !important;
+	
+}
+.modal.large {
+     width: 80%;
 }
 
-.modal-dialog {
-	width: 100%;
-	max-width: 560px;
+.modal-admin {
+	/* width: 100%;
+	max-width: 560px; */
+	/* width: 750px;
+    /* must be half of the width, minus scrollbar on the left (30px) */
+    margin-left: -375px; */
 	margin: 0 auto;
 }
 
@@ -983,11 +992,19 @@ footer .social-footer li:hover a {
 	color: #fff;
 	background: #00a8ff;
 }
-
+.blank_row
+{
+    height: 20px !important; /* Overwrite any previous rules */
+   
+}
 .row.title {
 	padding: 0 20px;
 }
-
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
 .light {
 	font-weight: 300;
 }
@@ -1026,11 +1043,12 @@ footer .social-footer li:hover a {
 }
 
 .muted {
-	color: #989da0;
+	color: white;
 }
 
 .margin-top {
 	margin-top: 30px;
+	/* color:white; */
 }
 
 @media(max-width:992px) {
@@ -1184,7 +1202,7 @@ width:110px;
 	font-size:11px;
 	height:35px;
 	line-height:35px;
-	color:#ffffff;
-	color:rgba(0, 0, 0, 0.4);
+	color:black;
+	
 }
 

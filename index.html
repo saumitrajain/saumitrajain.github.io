@@ -8,10 +8,10 @@
 	<title>Saumitra Jain</title>
 	
 	<!-- Favicons (created with http://realfavicongenerator.net/)-->
-	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+<!-- 	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
 	<link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16"> -->
 	<link rel="manifest" href="img/favicons/manifest.json">
 	<link rel="shortcut icon" href="img/favicons/favicon.ico">
 	<meta name="msapplication-TileColor" content="#00a8ff">
@@ -35,19 +35,25 @@
 	<!-- Main style -->
 	<link href='https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/cardio.css">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/reset1.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/reset1.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/style1.css"> 
 	<link rel="stylesheet" type="text/css" href="css/style4.css">
-    <link rel="stylesheet" type="text/css" href="css/demo.css"> 	
+    <!-- <link rel="stylesheet" type="text/css" href="css/demo.css"> --> 	
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Open+Sans:300" />
-    <!-- <link rel="stylesheet" type="text/css" href="/css/styles.css"/> -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 	<script src="js/modernizr.js"></script>
 	
 </head>
 
 <body>
+<div class="fullscreen-bg">
+    <video loop muted autoplay class="fullscreen-bg__video">
+        <source src="v2.mp4" type="video/mp4">
+        
+    </video>
+</div>
 	<div class="preloader">
 		<img src="img/loader.gif" alt="Preloader image">
 	</div>
@@ -70,7 +76,7 @@
 					<li><a href="#aboutme">About Me</a></li>
 					<li><a href="#team">Skills</a></li>
 					<li><a href="#pricing">Experience</a></li>
-					<li><a href="Gallery.html">Gallery</a></li>
+					<li><a href="index.html">Education</a></li>
 					<li><a href="Downloads.html">Downloads</a></li>
 					<li><a href="#contact">Contact Me</a></li>
 				</ul>
@@ -94,54 +100,12 @@
 			</div>
 		</div>
 	</header>
-	<section id="aboutme" >
-	<div class ="container">
+	
 	<div class="row title text-center">
-				<h2 class="margin-top"><span>Wanna know me</span></h2>				
-	</div><br><br>				
-				<h2 class="margin-left">
-					<div class="rw-words rw-words-1">
-						<span>Extovert</span>
-						<span>Creative</span>
-						<span>Geeky</span>
-						<span>Traveler</span>
-						<span>Friendly</span>
-						<span>Self- dependent</span>
-			<!-- 			<span>Passionate</span> -->
-					</div>
-					
-					<div class="rw-words rw-words-2">
-						<span>Because i like connecting with people</span>
-						<span>Which i show in my work</span>
-						<span>That what make me a coder</span>
-						<span>Because you have one life,and a world to explore</span>
-						<span>Because my name also says 100- friends</span>
-						<span>Because delegating is too mainstream</span>
-						<!-- <span>becuase i am enjoying my field of work</span> -->
-					</div>
-				</h2>
-				</div>
-			</section>
-	<!-- <section id="about-me">
-    <div class="row title text-center">
 				<h2 class="margin-top">About Me</h2>				
 	</div><br><br>
-	<div class="container">
-		<p>Hi I am Saumitra Jain, my name in my native language means 100 friends which is exactly my nature. I love to connect with people from different backgrounds to get an insight of their work.
-	       I am curious and creative by nature. I want to develop things that are unique and to develop my skills in a continuum.</p>
-
-		<p>I am currently working with Infosys as a developer. Last year I graduated from State University Of New York-University at Albany. </p>
-
-		<p>In Summer 2014, I was employed with NYC DEP as a software engineering intern. In this role I have to automate the internal process by creating application which will enable the employees for effortless work. Our most exciting work to date is the Web application LIMS (Laboratory Information Managements System) which will allow the real time updation of Laboratory Data across NYC-DEP on the SQL Server. Not only did we have an enormous learning while creating the application, but also we found it rewarding to see the results.</p>
-		 
-		<p>I’m truly passionate about my work and always eager to learn more to grow my technical knowledge. While I enjoy all aspects of my job, I think my favorite stage of a project is interaction with clients to know their objectives from the project. I always tend to follow a creative approach towards work and always express my ideas during this process. As we go through that collaborative process, the ideas start to flow and that’s always the fun part.</p>
-		 
-		<p>I’m always interested in hearing from former colleagues, managers, or just interesting creative folk, so feel free to contact me.</p>
-
-	</div>
-	</section> -->
 	<section id="cd-timeline" class="cd-container">
-	
+	<div class="container">
 		<div class="cd-timeline-block">
 			<div class="cd-timeline-img cd-picture">
 				<img src="img/cd-icon-picture.svg" alt="Picture">
@@ -236,16 +200,16 @@
 				<span class="cd-date">Jun 2015</span>
 			</div> 
 		</div> 		
-		
+		</div>
 	</section> <!-- cd-timeline -->
-	<section id="team" class="section gray-bg">
+	<section id="team">
 		<div class="container">
 		
 				<div class="row title text-center">
 				<h2 class="margin-top">Skills</h2>
-				<h4 class="light muted">Its always in the making</h4>
+				
 			</div><br><br>
-			<div class="skillbar clearfix " data-percent="70%">
+			<div class="skillbar clearfix " data-percent="80%">
 				<div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
 				<div class="skillbar-bar" style="background: #e67e22;"></div>
 				<div class="skill-bar-percent">70%</div>
@@ -257,13 +221,7 @@
 				<div class="skill-bar-percent">80%</div>
 			</div> <!-- End Skill Bar -->
 
-			<div class="skillbar clearfix " data-percent="50%">
-				<div class="skillbar-title" style="background: #2c3e50;"><span>jQuery</span></div>
-				<div class="skillbar-bar" style="background: #2c3e50;"></div>
-				<div class="skill-bar-percent">50%</div>
-			</div> <!-- End Skill Bar -->
-
-			<div class="skillbar clearfix " data-percent="70%">
+			<div class="skillbar clearfix " data-percent="80%">
 				<div class="skillbar-title" style="background: #46465e;"><span>C/C++</span></div>
 				<div class="skillbar-bar" style="background: #5a68a5;"></div>
 				<div class="skill-bar-percent">70%</div>
@@ -281,7 +239,7 @@
 				<div class="skill-bar-percent">80%</div>
 			</div> <!-- End Skill Bar -->
 
-			<div class="skillbar clearfix " data-percent="75%">
+			<div class="skillbar clearfix " data-percent="80%">
 				<div class="skillbar-title" style="background: #124e8c;"><span>SQL</span></div>
 				<div class="skillbar-bar" style="background: #4288d0;"></div>
 				<div class="skill-bar-percent">75%</div>
@@ -291,7 +249,7 @@
 
 
 	</section>
-	<section id="pricing" class="section">
+	<section id="pricing" >
 		<div class="container">
 			<div class="row title text-center">
 				<h2 class="margin-top">Experience</h2>
@@ -299,7 +257,7 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="team text-center">
-						<div class="cover" style="background:url('img/team/team-cover1.jpg'); background-size:cover;">
+						<div class="cover" style="background:url('img/team/team-cover1.jpg'); background-size:cover;" >
 						    <div class="overlay text-center">
 								
 							</div>
@@ -308,8 +266,8 @@
 						<img src="img/team/team3.png" alt="Team Image" class="avatar">	
 						<div class="title">
 							<h4>Infosys</h4>
-							<h5 class="muted regular">Software Developer</h5><br>
-							<h4 class="muted regular">Los Angeles,CA</h4>
+							<h5 class="regular">Software Developer</h5><br>
+							<h4 class="regular">Los Angeles,CA</h4>
 						</div>
 												
 					</div>
@@ -324,8 +282,8 @@
 						<img src="img/team/team1.png" alt="Team Image" class="avatar">
 						<div class="title">
 							<h4>NYC DEP</h4>
-							<h5 class="muted regular">Software Engineering Intern</h5><br>
-							<h4 class="muted regular">New York City,NY</h4>
+							<h5 class="regular">Software Engineering Intern</h5><br>
+							<h4 class="regular">New York City,NY</h4>
 						</div>
 						
 					</div>
@@ -341,12 +299,64 @@
 						<img src="img/team/team2.jpg" alt="Team Image" class="avatar">
 						<div class="title">
 							<h4>Varroc</h4>
-							<h5 class="muted regular">Assistant Manager-Corporate HR</h5><br>
-							<h4 class="muted regular">Aurangabad,India</h4>
+							<h5 class="regular">Assistant Manager-Corporate HR</h5><br>
+							<h4 class="regular">Aurangabad,India</h4>
 						</div>						
 					</div>
 				</div>
 		</div>
+	</section>
+	<section id="education">
+	<div class="row title text-center">
+				<h2 class="margin-top">Education</h2>				
+	</div><br><br>
+	<div class="container">
+		<div class="row">
+				<div class="col-sm-8 ">
+					<h3>University At Albany, SUNY</h3>
+					<p>Degree: Masters in Science</p>
+					<p>Major: Computrer Science</p>
+					<p>Location: Albany, NY</p>
+				</div>
+				<div class="col-sm-4">				
+					<img src="img/SUNY.png" style="width:304px;height:180px;">
+				</div>				
+		</div>
+		<div class="blank_row">
+				<div class="col-sm-8">
+					
+				</div>
+							
+		</div>
+		<div class="row">
+				<div class="col-sm-8" >
+					<h3>Rajiv Gandhi Technical University</h3>
+					<p>Degree: Bachelors in Science</p>
+					<p>Major: Computrer Science</p>
+					<p>Location: Jabalpur, India</p>
+				</div>
+				<div class="col-sm-4">				
+					<img src="img/rgtu.png" style="width:180px;height:180px;display: block;margin: auto;">
+				</div>				
+		</div>
+		<div class="blank_row">
+				<div class="col-sm-8">
+					
+				</div>
+							
+		</div>
+		<div class="row">
+				<div class="col-sm-8" >
+					<h3>BIMHRD</h3>
+					<p>Degree: Masters In Business Administration</p>
+					<p>Major: Human Resources</p>
+					<p>Location: Pune, India</p>
+				</div>
+				<div class="col-sm-4">				
+					<img src="img/bimhrd.png" style="width:180px;height:180px;display: block;margin: auto;">
+				</div>				
+		</div>
+	</div>
 	</section>
 	
 	<section id="contact" >
@@ -355,7 +365,7 @@
 	<form method="POST" class="cd-form floating-labels" action="contact.php">
 		<fieldset>
 			<div >
-				<h3>Contact Us</h3>
+				<h3 style="color:#00a8ff">Contact Us</h3>
 			</div>
 
 			<div class="icon">
@@ -365,7 +375,7 @@
 
 		    <div class="icon">
 		    	<label class="cd-label" for="cd-email">Email</label>
-				<input class="email error" type="email" name="cd-email" id="cd-email" required>
+				<input class="email" type="email" name="cd-email" id="cd-email" required>
 		    </div>
 		</fieldset>
 
@@ -384,44 +394,28 @@
 		</fieldset>
 		
 		
-	</form>
-	
-	<!-- </div>
-       <div class="container">
-			<div class="row bottom-footer text-center-mobile">
-				<div class="col-sm-3">
-					<p>Connect with me on</p>
-				</div>
-				<div class="col-sm-2">
-					<a href="https://www.facebook.com/saumitrajain.cs"><i class="fa fa-facebook fa-2x"></i></a>
-				</div>
-				<div class="col-sm-2">
-					<a href="https://twitter.com/JainSaumitra"><i class="fa fa-twitter fa-2x"></i></a></li>
-				</div>
-				<div class="col-sm-2">
-					<a href="https://plus.google.com/u/0/+SaumitraJain"><i class="fa fa-google-plus fa-2x"></i></a>
-				</div>
-				<div class="col-sm-3 text-right text-center-mobile">
-					<p>&copy; 2015 All Rights Reserved.</p>
-				</div>
-			</div>
-		</div> -->
-	
+	</form>	
 	</section>
 	
-	<footer>
+	<footer class="animated fadeIn" style="background:rgba(28, 36, 65, 0.93) ">
 		<div class="container">
-			<div class="row bottom-footer text-center-mobile">
-				<div class="col-sm-8">
-					<p>&copy; 2015 All Rights Reserved. </p>
+			<div class="row text-center-mobile" >
+				<div class="col-sm-4">
+					<p >Lets Connect</p>
 				</div>
-				<div class="col-sm-4 text-right text-center-mobile">
-					<ul class="social-footer">
-						<li><a href="https://www.facebook.com/saumitrajain.cs"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="https://twitter.com/JainSaumitra"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="https://plus.google.com/u/0/+SaumitraJain"><i class="fa fa-google-plus"></i></a></li>
-					</ul>
+				<div class="col-sm-2 text-right text-center-mobile">				
+					    <a href="https://www.linkedin.com/in/saumitrajain">LinkedIn</a>
 				</div>
+				<div class="col-sm-2 text-right text-center-mobile">
+					<a href="https://www.facebook.com/saumitrajain.cs">facebook</a>						
+				</div>
+				<div class="col-sm-2 text-right text-center-mobile">					
+						<a href="https://twitter.com/JainSaumitra">Twitter</a>						
+				</div>
+				<div class="col-sm-2 text-right text-center-mobile">						    
+					<a href="https://plus.google.com/u/0/+SaumitraJain">Google+</a>					
+				</div>
+
 			</div>
 			
 		</div>
@@ -443,7 +437,7 @@
 	<script src="js/main.js"></script>
 	<script src="js/modernizr.custom.72111.js"></script>
 	<!-- <script src="js/impress.js"></script> -->
-	<!-- <script src="js/script.js"></script> -->
+	<script src="js/script.js"></script>
 </body>
 
 </html>
