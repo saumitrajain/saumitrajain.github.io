@@ -86,51 +86,108 @@ function showIFrame() {
 	<div class="container">
 	<br><br><br><br><br><br><br>
 	</div>
-		
 
-<section id="aboutme" >
+
+<section id="pricing" >
+		<div class="container">
+			<div class="row title text-center">
+				<h2 class="margin-top">Experience</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="team text-center">
+						<div class="cover" style="background:url('img/team/team-cover1.jpg'); background-size:cover;" >
+						    <div class="overlay text-center">
+								
+							</div>
+							
+						</div>
+						<img src="img/team/team3.png" alt="Team Image" class="avatar">	
+						<div class="title">
+							<h4>Infosys</h4>
+							<h5 class="regular">Software Developer</h5><br>
+							<h4 class="regular">Los Angeles,CA</h4>
+						</div>
+												
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="team text-center">
+						<div class="cover" style="background:url('img/team/team-cover2.jpg'); background-size:cover;">
+							<div class="overlay text-center">
+								
+							</div>
+						</div>
+						<img src="img/team/team1.png" alt="Team Image" class="avatar">
+						<div class="title">
+							<h4>NYC DEP</h4>
+							<h5 class="regular">Software Engineering Intern</h5><br>
+							<h4 class="regular">New York City,NY</h4>
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="team text-center">
+						<div class="cover" style="background:url('img/team/team-cover3.jpg'); background-size:cover;">
+						<div class="overlay text-center">
+								
+							</div>
+							
+						</div>
+						<img src="img/team/team2.jpg" alt="Team Image" class="avatar">
+						<div class="title">
+							<h4>Varroc</h4>
+							<h5 class="regular">Assistant Manager-Corporate HR</h5><br>
+							<h4 class="regular">Aurangabad,India</h4>
+						</div>						
+					</div>
+				</div>
+		</div>
+	</section>
+	<section id="aboutme" >
 	
 	<div class ="container">
 		<div class="panel panel-primary" id="panel2">
 		<div class="panel-heading">Downloads</div>
 		<div class="panel-body">
-		<!-- Trigger/Open The Modal -->
-		     <div class="row">
-						<div class="col-sm-8"><h4>Resume</h4></div>
-						<div class="col-sm-2"><button id="myBtn" class="view-pdf" href="Saumitra_Jain.pdf">View</button></div>	
-						<div class="col-sm-2">
-						<form method="get" action="Saumitra_jain.pdf">
-						<button class="btn-primary" type="submit">Download</button>
-						</form>
-						</div>
+			<!-- Trigger/Open The Modal -->
+				 <div class="row">
+							<div class="col-sm-8"><h4>Resume</h4></div>
+							<div class="col-sm-2"><button id="myBtn" class="view-pdf" href="Saumitra_Jain.pdf">View</button></div>	
+							<div class="col-sm-2">
+							<form method="get" action="Saumitra_jain.pdf">
+							<button class="btn-primary" type="submit">Download</button>
+							</form>
+							</div>
+				</div><br>
+						
+
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+
+			  <!-- Modal content -->
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <!-- <span class="close">&times;</span> -->
+				  <h2>Resume</h2>
+				</div>
+				<div class="modal-body">
+					 <div class="panel panel-primary" id="panel1"style="display:none">
+							  <div class="panel-heading"></div>
+							  <div class="panel-body">
+								  <iframe id="iframepdf" height="800" position:absolute></iframe>
+								  <div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								  </div>
+							  </div>
+					 </div>
+				</div>
 			</div>
-					<br>
-					
-
-		<!-- The Modal -->
-		<div id="myModal" class="modal">
-
-		  <!-- Modal content -->
-		  <div class="modal-content">
-			<div class="modal-header">
-			  <!-- <span class="close">&times;</span> -->
-			  <h2>Resume</h2>
 			</div>
-			<div class="modal-body">
-			 <div class="panel panel-primary" id="panel1"style="display:none">
-					  <div class="panel-heading"></div>
-					  <div class="panel-body">
-					  <iframe id="iframepdf" height="800" position:absolute></iframe>
-					  <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-					  </div>
-                   </div>
-		  </div>
-
-		</div>
-		</div>
-	</div>
+	    </div>
+		
+		
 	
 </section>
 	
