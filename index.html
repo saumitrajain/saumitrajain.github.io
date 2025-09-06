@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saumitra Jain | Software Developer</title>
-    <meta name="description" content="Software Developer specializing in web development, machine learning, and full-stack applications">
+    <title>Saumitra Jain | Technical Project Manager</title>
+    <meta name="description" content="Certified Project Leader with 10+ years of experience delivering enterprise-scale software and cloud solutions across automotive, public sector, and enterprise domains">
     
     <!-- Favicons -->
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3e%3ctext y='.9em' font-size='90'%3e💻%3c/text%3e%3c/svg%3e">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3e%3ctext y='.9em' font-size='90'%3e💼%3c/text%3e%3c/svg%3e">
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -323,6 +323,81 @@
             font-weight: 500;
         }
 
+        /* Experience section */
+        .experience-timeline {
+            position: relative;
+        }
+
+        .experience-item {
+            background: var(--surface);
+            border-radius: var(--border-radius);
+            padding: 32px;
+            margin-bottom: 32px;
+            border: 1px solid var(--border);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .experience-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .experience-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+
+        .experience-company {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .experience-date {
+            background: var(--primary-color);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .experience-description {
+            margin-bottom: 20px;
+        }
+
+        .experience-achievements {
+            list-style: none;
+        }
+
+        .experience-achievements li {
+            margin-bottom: 12px;
+            padding-left: 24px;
+            position: relative;
+            color: var(--text-secondary);
+        }
+
+        .experience-achievements li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
         /* Projects section */
         .projects-grid {
             display: grid;
@@ -401,40 +476,39 @@
             text-align: center;
         }
 
-        .contact-form {
+        .contact-info {
             display: grid;
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
             margin-top: 40px;
         }
 
-        .form-group {
-            display: grid;
-            gap: 8px;
-        }
-
-        .form-group label {
-            font-weight: 500;
-            text-align: left;
-        }
-
-        .form-control {
-            padding: 12px 16px;
-            border: 1px solid var(--border);
-            border-radius: 8px;
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 20px;
             background: var(--background);
-            color: var(--text-primary);
-            font-family: inherit;
+            border-radius: var(--border-radius);
+            border: 1px solid var(--border);
             transition: var(--transition);
         }
 
-        .form-control:focus {
-            outline: none;
-            border-color: var(--primary-color);
+        .contact-item:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
         }
 
-        textarea.form-control {
-            min-height: 120px;
-            resize: vertical;
+        .contact-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
         }
 
         /* Footer */
@@ -528,6 +602,15 @@
             .hero-actions {
                 justify-content: center;
             }
+
+            .experience-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
         }
 
         /* Animations */
@@ -567,7 +650,7 @@
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
 
@@ -588,11 +671,11 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>Hi, I'm <span class="highlight">Saumitra Jain</span></h1>
-                    <p>A passionate software developer creating innovative solutions with modern technologies. Specializing in full-stack development, machine learning, and user experience design.</p>
+                    <p>Certified Project Leader with 10+ years of experience delivering enterprise-scale software and cloud solutions across automotive, public sector, and enterprise domains. Proven success in Agile project delivery, stakeholder engagement, and infrastructure optimization.</p>
                     <div class="hero-actions">
-                        <a href="#projects" class="btn btn-primary">
-                            <i class="fas fa-code"></i>
-                            View Projects
+                        <a href="#experience" class="btn btn-primary">
+                            <i class="fas fa-briefcase"></i>
+                            View Experience
                         </a>
                         <a href="#contact" class="btn btn-secondary">
                             <i class="fas fa-envelope"></i>
@@ -602,7 +685,7 @@
                 </div>
                 <div class="hero-image">
                     <div class="hero-avatar">
-                        👨‍💻
+                        👨‍💼
                     </div>
                 </div>
             </div>
@@ -613,17 +696,17 @@
     <section class="about section" id="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
-            <p class="section-subtitle">Passionate about creating meaningful digital experiences</p>
+            <p class="section-subtitle">Skilled in solving complex problems using modern technology and empowering global teams</p>
             
             <div class="about-content">
                 <div>
                     <p style="font-size: 18px; line-height: 1.8; color: var(--text-secondary); margin-bottom: 24px;">
-                        I'm a dedicated software developer with a strong foundation in computer science and a passion for solving complex problems through code. I enjoy working with cutting-edge technologies and am always eager to learn new skills.
+                        I am a passionate technical project manager with a strong foundation in both computer science and business administration. My journey spans across multiple industries including automotive, public sector, and enterprise solutions.
                     </p>
                     <p style="font-size: 18px; line-height: 1.8; color: var(--text-secondary); margin-bottom: 32px;">
-                        My experience spans across web development, mobile applications, and machine learning, allowing me to tackle diverse challenges and create comprehensive solutions.
+                        I excel at bridging the gap between technical teams and business stakeholders, translating complex requirements into actionable deliverables while ensuring successful project outcomes.
                     </p>
-                    <a href="resume.pdf" class="btn btn-primary" target="_blank">
+                    <a href="Saumitra_Jain.docx" class="btn btn-primary" target="_blank">
                         <i class="fas fa-download"></i>
                         Download Resume
                     </a>
@@ -631,20 +714,20 @@
                 
                 <div class="stats-grid">
                     <div class="stat-item">
-                        <span class="stat-number">50+</span>
-                        <span>Projects Completed</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">3+</span>
+                        <span class="stat-number">10+</span>
                         <span>Years Experience</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">15+</span>
-                        <span>Technologies</span>
+                        <span class="stat-number">$500K+</span>
+                        <span>Cost Savings</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">100%</span>
-                        <span>Client Satisfaction</span>
+                        <span class="stat-number">22</span>
+                        <span>Max Team Size</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">66%</span>
+                        <span>SLA Improvement</span>
                     </div>
                 </div>
             </div>
@@ -655,153 +738,144 @@
     <section class="skills section" id="skills">
         <div class="container">
             <h2 class="section-title">Skills & Technologies</h2>
-            <p class="section-subtitle">Technologies I work with to bring ideas to life</p>
+            <p class="section-subtitle">Technologies and methodologies I use to deliver high-impact results</p>
             
             <div class="skills-grid">
                 <div class="skill-category card">
-                    <h3><i class="fas fa-code"></i> Frontend Development</h3>
+                    <h3><i class="fas fa-tasks"></i> Project Management</h3>
                     <div class="skill-list">
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Vue.js</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Agile</span>
+                        <span class="skill-tag">Scrum</span>
+                        <span class="skill-tag">Kanban</span>
+                        <span class="skill-tag">SDLC</span>
+                        <span class="skill-tag">Risk Management</span>
+                        <span class="skill-tag">Stakeholder Engagement</span>
                     </div>
                 </div>
                 
                 <div class="skill-category card">
-                    <h3><i class="fas fa-server"></i> Backend Development</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Django</span>
-                        <span class="skill-tag">Express.js</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">Redis</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category card">
-                    <h3><i class="fas fa-cloud"></i> DevOps & Tools</h3>
+                    <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
                     <div class="skill-list">
                         <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Kubernetes</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub Actions</span>
-                        <span class="skill-tag">Nginx</span>
-                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">AppDynamics</span>
+                        <span class="skill-tag">CloudWatch</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Bitbucket</span>
                     </div>
                 </div>
                 
                 <div class="skill-category card">
-                    <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+                    <h3><i class="fas fa-tools"></i> Tools & Analytics</h3>
                     <div class="skill-list">
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">Scikit-learn</span>
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">OpenCV</span>
-                        <span class="skill-tag">Jupyter</span>
+                        <span class="skill-tag">JIRA</span>
+                        <span class="skill-tag">Confluence</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Excel</span>
+                        <span class="skill-tag">Datadog</span>
+                        <span class="skill-tag">PagerDuty</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category card">
+                    <h3><i class="fas fa-code"></i> Technical Skills</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">AngularJS</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">Perl</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="projects section" id="projects">
+    <!-- Experience Section -->
+    <section class="experience section" id="experience">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">A showcase of my recent work and contributions</p>
+            <h2 class="section-title">Professional Experience</h2>
+            <p class="section-subtitle">A journey through enterprise-scale software and cloud solutions</p>
             
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        🚀
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">E-Commerce Platform</h3>
-                        <p class="project-description">
-                            A full-stack e-commerce solution with React frontend, Node.js backend, and integrated payment processing.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">Stripe</span>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Technical Project Manager</div>
+                            <div class="experience-company">Infosys @ Toyota Motors North America</div>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-secondary">
-                                <i class="fab fa-github"></i>
-                                Code
-                            </a>
-                            <a href="#" class="btn btn-primary">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                        </div>
+                        <div class="experience-date">Jan 2021 - Present</div>
                     </div>
+                    <div class="experience-description">
+                        <p style="margin-bottom: 16px;">Leading multiple cross-functional Agile teams to deliver cloud-native solutions for Toyota's supplier collaboration ecosystem.</p>
+                    </div>
+                    <ul class="experience-achievements">
+                        <li>Directed end-to-end delivery of cloud native supplier collaboration application using AWS, ReactJS, NodeJS, and Postgres</li>
+                        <li>Acted as primary liaison between technical teams and business stakeholders, translating requirements into actionable deliverables</li>
+                        <li>Defined and executed sprint-based project roadmap; managed change control, release planning, and backlog grooming using JIRA and Confluence</li>
+                        <li>Spearheaded adoption of modern technologies (Datadog, AppDynamics) to enhance observability and system resilience</li>
+                        <li>Facilitated supplier onboarding, training, and SLA negotiations to ensure adoption, data accuracy, and alignment with new forecasting cadence</li>
+                    </ul>
                 </div>
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        🤖
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">AI Chat Assistant</h3>
-                        <p class="project-description">
-                            An intelligent chatbot built with natural language processing capabilities and machine learning integration.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">Flask</span>
-                            <span class="tech-tag">NLP</span>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Technical Team Lead</div>
+                            <div class="experience-company">Infosys @ Toyota Motors North America</div>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-secondary">
-                                <i class="fab fa-github"></i>
-                                Code
-                            </a>
-                            <a href="#" class="btn btn-primary">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                        </div>
+                        <div class="experience-date">Jul 2018 - Jan 2021</div>
                     </div>
+                    <div class="experience-description">
+                        <p style="margin-bottom: 16px;">Led a global Agile team using follow-the-sun model to deliver cloud-native dealer-facing applications.</p>
+                    </div>
+                    <ul class="experience-achievements">
+                        <li>Led a global Agile team of 22 using a follow-the-sun model to deliver cloud-native dealer-facing web/iOS applications on AWS</li>
+                        <li>Reduced operational time by 35% and improved scalability across North America</li>
+                        <li>Implemented Lean Infrastructure and automated monitoring with AWS CloudWatch and PagerDuty</li>
+                        <li>Cut downtime by 30% and saved $500K annually through server/license optimization</li>
+                        <li>Led Site Reliability Engineering initiatives, reducing SLA resolution times by 66%</li>
+                    </ul>
                 </div>
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        📱
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Task Management App</h3>
-                        <p class="project-description">
-                            A responsive web application for task management with real-time collaboration features and intuitive UI.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">PWA</span>
-                            <span class="tech-tag">WebSocket</span>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Software Developer</div>
+                            <div class="experience-company">Infosys @ Toyota Motors North America</div>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-secondary">
-                                <i class="fab fa-github"></i>
-                                Code
-                            </a>
-                            <a href="#" class="btn btn-primary">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
-                            </a>
-                        </div>
+                        <div class="experience-date">Jun 2015 - Jul 2018</div>
                     </div>
+                    <div class="experience-description">
+                        <p style="margin-bottom: 16px;">Developed and deployed scalable application enhancements on Microsoft Azure with focus on automation and monitoring.</p>
+                    </div>
+                    <ul class="experience-achievements">
+                        <li>Developed and deployed scalable application enhancements on Microsoft Azure</li>
+                        <li>Leveraged CI/CD pipelines to streamline release cycles and reduce deployment errors</li>
+                        <li>Engineered automation scripts to resolve recurring data integrity issues</li>
+                        <li>Migrated legacy application performance monitoring tools to AppDynamics</li>
+                        <li>Implemented real-time dashboards and alerting mechanisms to enhance system observability</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Business Analyst</div>
+                            <div class="experience-company">Varroc Engineering</div>
+                        </div>
+                        <div class="experience-date">Mar 2012 - Jul 2013</div>
+                    </div>
+                    <div class="experience-description">
+                        <p style="margin-bottom: 16px;">Led HRIS transformation project and delivered operational improvements through process optimization.</p>
+                    </div>
+                    <ul class="experience-achievements">
+                        <li>Led HRIS transformation project, reducing policy costs by 50%</li>
+                        <li>Delivered operational improvements through gap analysis and process mapping</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -812,100 +886,21 @@
         <div class="container">
             <div class="contact-content">
                 <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Let's discuss your next project or just say hello!</p>
+                <p class="section-subtitle">Let's discuss your next project or collaboration opportunity</p>
                 
-                <form class="contact-form" id="contact-form">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" class="form-control" required>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>saumitrajain@gmail.com</p>
+                        </div>
                     </div>
                     
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" class="form-control" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" class="form-control" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" class="form-control" required placeholder="Tell me about your project or just say hi!"></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-paper-plane"></i>
-                        Send Message
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="social-links">
-                <a href="https://github.com/saumitrajain" class="social-link" target="_blank" rel="noopener">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://linkedin.com/in/saumitrajain" class="social-link" target="_blank" rel="noopener">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://twitter.com/saumitrajain" class="social-link" target="_blank" rel="noopener">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="mailto:saumitra@example.com" class="social-link">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-            <p>&copy; 2025 Saumitra Jain. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        // Portfolio Application Module
-        class PortfolioApp {
-            constructor() {
-                this.init();
-            }
-
-            init() {
-                this.setupEventListeners();
-                this.setupTheme();
-                this.setupAnimations();
-                this.setupNavigation();
-                this.setupContactForm();
-            }
-
-            // Theme Management Module
-            setupTheme() {
-                const themeToggle = document.getElementById('theme-toggle');
-                const themeIcon = themeToggle.querySelector('i');
-                
-                // Load saved theme
-                const savedTheme = localStorage.getItem('theme') || 'light';
-                document.documentElement.setAttribute('data-theme', savedTheme);
-                this.updateThemeIcon(themeIcon, savedTheme);
-
-                themeToggle.addEventListener('click', () => {
-                    const currentTheme = document.documentElement.getAttribute('data-theme');
-                    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-                    
-                    document.documentElement.setAttribute('data-theme', newTheme);
-                    localStorage.setItem('theme', newTheme);
-                    this.updateThemeIcon(themeIcon, newTheme);
-                });
-            }
-
-            updateThemeIcon(icon, theme) {
-                icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-            }
-
-            // Navigation Module
-            setupNavigation() {
-                const mobileToggle = document.getElementById('mobile-toggle');
-                const navMenu = document.getElementById('nav-menu');
-                const navLinks = document.queryS
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        
